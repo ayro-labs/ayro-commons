@@ -1,5 +1,5 @@
-const projectPackage = require('../package');
 const {commands} = require('../lib');
+const projectPackage = require('../package');
 const path = require('path');
 const Promise = require('bluebird');
 
