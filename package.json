@@ -1,0 +1,28 @@
+{
+  "name": "@ayro/ayro-commons",
+  "description": "Ayro Commons",
+  "version": "0.0.0",
+  "private": true,
+  "author": {
+    "name": "Ayro team",
+    "email": "team@ayro.io",
+    "url": "https://ayro.io"
+  },
+  "homepage": "https://ayro.io",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "release-lib": "node tasks/release.js",
+    "publish-lib": "node tasks/publish.js"
+  },
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.7.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "colors": "^1.1.2",
+    "deasync": "0.1.10",
+    "properties": "1.2.1"
+  }
+}
