@@ -15,6 +15,6 @@ function lintProject() {
 if (require.main === module) {
   publishTask.withWorkingDir(WORKING_DIR);
   publishTask.withBuildTask(lintProject);
-  publishTask.isDockerProject(true);
+  publishTask.isNpmProject(true);
   publishTask.run();
 }
