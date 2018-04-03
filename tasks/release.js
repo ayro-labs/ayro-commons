@@ -11,9 +11,16 @@ function lintProject() {
   })();
 }
 
+function buildProject() {
+  return Promise.coroutine(function* () {
+    // Nothing to do...
+  })();
+}
+
 // Run this if call directly from command line
 if (require.main === module) {
   releaseTask.withWorkingDir(WORKING_DIR);
-  releaseTask.withBuildTask(lintProject);
+  releaseTask.withLintTask(lintProject);
+  releaseTask.withBuildTask(buildProject);
   releaseTask.run(process.argv[2], process.argv[3]);
 }
