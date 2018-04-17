@@ -1,14 +1,11 @@
 const {publishTask, commands} = require('../lib');
 const path = require('path');
-const Promise = require('bluebird');
 
 const WORKING_DIR = path.resolve(__dirname, '../');
 
-function lintProject() {
-  return Promise.coroutine(function* () {
-    commands.log('Linting project...');
-    yield commands.exec('npm run lint', WORKING_DIR);
-  })();
+async function lintProject() {
+  commands.log('Linting project...');
+  await commands.exec('npm run lint', WORKING_DIR);
 }
 
 // Run this if call directly from command line
