@@ -1,3 +1,5 @@
+'use strict';
+
 const {publishTask, commands} = require('../lib');
 const path = require('path');
 

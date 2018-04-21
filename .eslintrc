@@ -18,10 +18,11 @@
     "max-len": ["error", {"code": 999, "tabWidth": 2}],
     "object-curly-spacing": ["error", "never"]
   },
+  "parserOptions": {
+    "sourceType": "script"
+  },
   "env": {
-    "es6": true,
-    "node": true,
-    "commonjs": true
+    "node": true
   },
   "extends": [
     "eslint:recommended",
