@@ -4,7 +4,7 @@
     "object-curly-newline": ["off"],
     "object-curly-spacing": ["error", "never"],
     "max-len": ["error", {"code": 999, "tabWidth": 2}],
-    "no-param-reassign": ["off"],
+    "no-param-reassign": ["error", {"props": false}],
     "no-underscore-dangle": ["off"],
   },
   "parserOptions": {
