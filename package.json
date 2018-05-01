@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "bluebird": "3.5.1",
-    "chalk": "2.4.0",
+    "chalk": "2.4.1",
     "deasync": "0.1.12",
     "lodash": "4.17.10",
     "properties": "1.2.1",
