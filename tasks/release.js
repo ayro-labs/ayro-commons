@@ -3,7 +3,7 @@
 const {commands, release} = require('../lib');
 const path = require('path');
 
-const WORKING_DIR = path.resolve(__dirname, '../');
+const WORKING_DIR = path.resolve();
 
 async function lintProject() {
   commands.log('Linting project...');

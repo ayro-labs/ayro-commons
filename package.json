@@ -8,6 +8,10 @@
     "url": "https://ayro.io"
   },
   "homepage": "https://ayro.io",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint '**/*.js'",
     "release-lib": "node tasks/release.js",
